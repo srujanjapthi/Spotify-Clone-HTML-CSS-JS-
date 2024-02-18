@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone Project</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home bg-grey rounded m-4 p-14">
+                <div class="logo flex">
+                    <img src="../assets/svg/logo.svg" class="invert" alt="logo">
+                    <img id="close" draggable="false" class="invert pointer" src="../assets/svg/close.svg" alt="close">
+                </div>
+                <ul>
+                    <li class="pointer underline"><img class="invert" src="../assets/svg/home.svg" alt="home">Home</li>
+                    <li class="pointer underline"><img class="invert" src="../assets/svg/search.svg" alt="home">Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-4 p-14">
+                <div class="heading flex items-center pointer">
+                    <img class="invert" src="../assets/svg/playlist.svg" alt="library">
+                    <p>
+                        Your library
+                    </p>
+                </div>
+
+                <div class="songlist">
+                    <ul class="flex"></ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded m-4">
+            <div class="header rounded">
+                <div class="nav-keys">
+                    <div id="menu">
+                        <img class="invert" src="../assets/svg/menu.svg" alt="menu-bar">
+                    </div>
+
+                    <div class="left-key">
+                        <img class="invert" src="../assets/svg/chevron-left.svg" alt="chevron-left">
+                    </div>
+
+                    <div class="right-key">
+                        <img class="invert" src="../assets/svg/chevron-right.svg" alt="chevron-left">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="signupbtn pointer">
+                        Sign up
+                    </button>
+                    <button class="loginbtn pointer">
+                        Log in
+                    </button>
+                </div>
+            </div>
+
+            <div class="spotify-playlist">
+                <h2 class="pointer">Recently Played</h2>
+                <div class="card-container flex"></div>
+            </div>
+
+            <div class="play-bar flex items-center justify-center rounded">
+                <div class="play-options flex items-center">
+                    <div class="song-name"></div>
+
+                    <div class="playbar-options flex items-center justify-center">
+                        <img id="prev" width="20" class="invert pointer" src="../assets/svg/play-left.svg"
+                            alt="play the previous song">
+                        <img id="curr" class="pointer" width="37" src="../assets/svg/pause-btn.svg" alt="pause-button">
+                        <img id="next" width="20" class="invert pointer" src="../assets/svg/play-right.svg"
+                            alt="play the next song">
+                    </div>
+
+                    <div class="volume-controls flex items-center justify-center">
+                        <img width="15" class="invert pointer" src="../assets/svg/volume-up.svg" alt="volume-up">
+                        <input class="pointer" type="range" name="volume-controls" id="volume" value="10">
+                    </div>
+                </div>
+
+                <div class="song-status">
+                    <div class="currsong-time"></div>
+                    <div class="seek-bar pointer flex">
+                        <div class="curr-state"></div>
+                        <div class="circle pointer"></div>
+                    </div>
+                    <div class="duration">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
