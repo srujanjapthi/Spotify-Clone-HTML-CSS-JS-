@@ -10,7 +10,6 @@ let getSongs = async (folder) => {
     let fetchSongs = await fetch(`/Projects/Spotify%20Clone%20(HTML,%20CSS,%20JS)/assets/songs/${folder}`);
     let response = await fetchSongs.text();
     let songs = [];
-    // console.log(response);
     let div = document.createElement('div');
     div.innerHTML = response;
     let a_s = div.getElementsByTagName('a');
@@ -48,7 +47,6 @@ let songCardHTML = (songName) => {
 let showSongs = (songs) => {
     // Show all the songs in the Playlist...
     let songUL = document.querySelector('.songlist>ul');
-    // console.log(songUL);
 
     songUL.innerHTML = "";
     for (let song of songs) {
