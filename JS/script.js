@@ -55,10 +55,8 @@ let showSongs = (songs) => {
     }
 
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach((song, i) => {
-        // console.log(songs[i]);
         let musicSrc = songs[i];
         song.addEventListener('click', () => {
-            // console.log(e.target);
             playMusic(musicSrc, false, i);
         });
     });
