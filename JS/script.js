@@ -66,7 +66,6 @@ let showSongs = (songs) => {
 const loadCards = async (folder) => {
     let fetchAlbums = await fetch(`/Projects/Spotify%20Clone%20(HTML,%20CSS,%20JS)/assets/songs/${folder}/info.json`);
     let response = await fetchAlbums.json();
-    // console.log(response);
 
     let cardProto = `<div data-folder=${folder} class="card flex pointer">
                         <div class="play flex items-center justify-center">
