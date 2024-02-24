@@ -106,7 +106,6 @@ const loadAlbums = async () => {
 
     let div = document.createElement('div');
     div.innerHTML = response;
-    // console.log(div);
 
     let anchors = div.getElementsByTagName('a');
 
