@@ -110,8 +110,6 @@ const loadAlbums = async () => {
     let anchors = div.getElementsByTagName('a');
 
     Array.from(anchors).forEach((item) => {
-        // console.log(item);
-
         if (item.href.includes('/songs/')) {
             let currFolder = item.href.split("/songs/")[1].split('/')[0];
             // console.log(currFolder);
