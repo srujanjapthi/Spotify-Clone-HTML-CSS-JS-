@@ -112,7 +112,6 @@ const loadAlbums = async () => {
     Array.from(anchors).forEach((item) => {
         if (item.href.includes('/songs/')) {
             let currFolder = item.href.split("/songs/")[1].split('/')[0];
-            // console.log(currFolder);
             loadCards(currFolder);
         }
     })
