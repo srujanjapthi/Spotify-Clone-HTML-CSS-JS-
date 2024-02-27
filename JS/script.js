@@ -122,7 +122,6 @@ let playMusic = (musicSrc, paused = false, i) => {
     if (!paused) {
         currSong.play();
         playCurrSong.src = "../assets/svg/play-btn.svg";
-        // document.querySelector(".song-list").children[i].querySelector(".play-now img").src = 
         updateSongItem(i);
         curr = i;
     }
