@@ -132,7 +132,6 @@ let playMusic = (musicSrc, paused = false, i) => {
 const updateSongItem = (i) => {
     let songItems = document.querySelectorAll(".songlist .play-now img");
     let songName = document.querySelectorAll(".songlist .name");
-    // console.log(songName);
     songItems[prev].src = `../assets/svg/play2.svg`;
     songItems[i].src = `../assets/svg/music-play-indicator.svg`;
 
