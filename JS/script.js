@@ -164,7 +164,6 @@ let secondsToMinuteSeconds = (seconds) => {
 
 let updateTime = (songs) => {
     let currState = document.querySelector(".curr-state");
-    // console.log(currSong.duration, currSong.currentTime);
     document.querySelector(".currsong-time").innerHTML = secondsToMinuteSeconds(currSong.currentTime);
     document.querySelector(".duration").innerHTML = secondsToMinuteSeconds(currSong.duration);
     let percent = (currSong.currentTime / currSong.duration) * 100;
