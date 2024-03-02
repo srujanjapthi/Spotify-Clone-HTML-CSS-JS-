@@ -186,7 +186,6 @@ let seek = () => {
         const seekBar = document.querySelector(".seek-bar");
         let currState = document.querySelector(".curr-state");
         let rect = seekBar.getBoundingClientRect().width;
-        // console.log(seekBar.clientX);
         // console.log(e.offsetX, e.target.getBoundingClientRect().width);
         // console.log(e.offsetX, e.target);
         let percent = (e.offsetX / rect) * 100;
