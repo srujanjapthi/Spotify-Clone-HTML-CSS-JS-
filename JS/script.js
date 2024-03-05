@@ -187,7 +187,6 @@ let seek = () => {
         let currState = document.querySelector(".curr-state");
         let rect = seekBar.getBoundingClientRect().width;
         let percent = (e.offsetX / rect) * 100;
-        // let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
         document.querySelector(".circle").style.left = `${e.clientX - rect.left}`;
         currSong.currentTime = (percent * currSong.duration) / 100;
         currState.style.width = `${percent}%`
