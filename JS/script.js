@@ -196,7 +196,6 @@ let seek = () => {
 // Add an Event Listner to previous and Next.
 const previousAndNextEvents = (songs) => {
     document.querySelector("#prev").addEventListener('click', () => {
-        // console.log("Previous was clicked");
         // console.log(currSong);
         if (curr > 0) {
             let prevSongIdx = curr - 1;
