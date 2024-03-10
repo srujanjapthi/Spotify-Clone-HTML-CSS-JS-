@@ -205,9 +205,6 @@ const previousAndNextEvents = (songs) => {
     });
 
     document.querySelector("#next").addEventListener('click', () => {
-        // console.log("Next was clicked");
-        // console.log(currSong);
-        // console.log(songs[curr + 1]);
         let nextSongIdx = (curr + 1) % songs.length;
         playMusic(songs[nextSongIdx], false, nextSongIdx);
     });
@@ -218,7 +215,6 @@ const updateVolume = () => {
 
     volumeBar.addEventListener("change", (e) => {
         currVolume = e.target.value;
-        // console.log(e.target.value);
         currSong.volume = currVolume / 100;
 
         if (currSong.muted) {
@@ -244,14 +240,8 @@ async function main() {
     await loadAlbums('Salaar');
 
     songs = await getSongs(`Salaar`);
-    // console.log(songs);
     showSongs(songs);
     loadWhenOpened(songs[0]);
-
-    // // Code to Play the Song...
-    // var audio = new Audio(songs[0]);
-    // // audio.play();
-
 
     playCurrSong.addEventListener('click', () => {
         toggleSongState(curr);
